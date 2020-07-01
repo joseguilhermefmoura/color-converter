@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- FONT AWESOME FREE --> 
+    <script type="text/javascript" src="https://kit.fontawesome.com/a02086f408.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <title>Color Converter</title>
+  </head>
+
+  <body ng-app="ColorConverter">
+
+  	<main ng-controller="ColorConverterController" class="bg-light pb-3">
+  			<div class="row justify-content-center py-3">
+  				<div class="col-12 col-lg-3 d-flex justify-content-center">
+  					<div class="card" style="width: 18rem;">
+						<div class="card-header text-center" style="background-color: var(--danger);">
+							<span style="color: white;"><strong>UNDER DEVELOPMENT!</strong></span>
+						</div>
+						<div class="card-body text-center">
+							<u>By this time,</u> this application can only convert HEX to RGB.
+							<br>
+							<br>
+							<small>Scroll down to use.</small>	
+						</div>
+					</div>
+  				</div>
+  			</div>
+  			<div class="row justify-content-center align-items-center">
+  				<div class="col-12 col-lg-3">
+  					<div class="text-center">
+  					<div class="alert alert-success" id="alert">
+						Copyed to clipboard! ;)
+					</div>
+		  			<h3>COLOR CONVERTER</h3>
+		  			</div>
+		  			<hr>
+		  			<h5>Enter a color:</h5>
+		  			<small>hex </small>
+		  			<input class="form-control mb-2" ng-model="name" ng-keyup="getConversion();">
+		  			<span class="result">
+		  				<u>RGB</u>
+		  				<input class="form-control readonly" type="" value="{{rgbValue}}" id="rgb-input" readonly>
+		  				<a href="" id="copy"><i class="far fa-copy"></i></a>
+		  			</span>
+  				</div>
+  			</div>
+  			<div class="row justify-content-center py-3">
+  				<div class="col-12 col-lg-3 align-self-center">
+	  				<div id="color-representation" style="height: 200px; background-color: {{bgColor}}"></div>
+  				</div>
+  			</div>
+  	</main>
+  	<footer>
+  		<div class="row">
+  			<div class="col-12 text-center bg-dark">
+  				<a href="https://github.com/joseguilhermefmoura" target="_blank" style="color: white">@joseguilhermefmoura</a>
+  			</div>
+  		</div>
+  	</footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  	    <!-- ANGULAR JS --> 
+    <script type="text/javascript" src="angular.min.js"></script>
+
+     <!-- CUSTOM JS -->
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>

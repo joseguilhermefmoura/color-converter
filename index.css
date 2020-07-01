@@ -1,0 +1,16 @@
+main {min-height: 100vh;}
+.row {margin: 0; padding: 0;}
+
+.readonly {background-color: white !important;}
+
+.result {display: flex; align-items: center;}
+.result input {margin-left: 15px;}
+
+i {
+	margin: 0 15px;
+}
+.result a {color: var(--secondary);}
+.result a:hover {color: var(--dark);}
+
+.alert {transition: 1s;opacity: 0;}
+.alert.show {opacity: 1;}
